@@ -1,0 +1,185 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	height:100vh;
+	overflow: hidden;
+	background-color: #169178;
+}
+
+.container{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	background-color: rgba(0,0,0,0.3);
+	padding: 30px 20px;
+	border-radius: 10px;
+
+
+}
+.description{
+	padding: 0 150px 100px 0;
+}
+.description i{
+	color: #fff;
+
+}
+.description h1{
+	font-family: 'ubuntu', sans-serif;
+	font-size: 25px;
+	color:#fff;
+}
+
+
+h2{
+	font-family: 'sacramento';
+}
+form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	gap: 1.5rem;
+
+}
+input{
+	background-color: transparent;
+	border: none;
+	padding: 10px 10px;
+	width: 250px;
+	margin-left:0;
+	color: #fff;
+	font-family: 'montserrat', sans-serif;
+	font-size: 15px;
+}
+
+input:focus {
+	outline:none;
+
+}
+
+legend{
+	font-family: 'montserrat', sans-serif;
+	margin-left: 10px;
+	padding: 0 5px;
+	font-size: 15px;
+	color:#fcfcfc;
+	font-weight: 400;
+}
+
+fieldset {
+	border-radius: 5px;
+	border-color: rgb(255, 255, 255);
+}
+
+fieldset:focus-within{
+	border-color: #fffcfc;
+}
+button {
+	padding: 10px 110px;
+	border-radius: 5px;
+	border: none;
+	font-size: 18px;
+	font-family: 'montserrat', sans-serif;
+	font-weight: 500;
+	cursor: pointer;
+}
+button:active {
+	transform: scale(0.98);
+}
+
+p{
+	font-family: 'montserrat', sans-serif;
+	font-weight: 500;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: 600;
+}
+/* Add to LOGIN.CSS */
+.validation-message {
+    color: #ff3333;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    display: none;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 5px;
+}
+
+.form-control.error .validation-message {
+    display: block;
+}
+
+.form-control.error fieldset {
+    border-color: #ff3333;
+    animation: shake 0.5s;
+}
+.form-control {
+    position: relative;
+    margin-bottom: 25px; /* Extra space for error message */
+}
+
+.validation-message {
+    position: absolute;
+    bottom: -20px; /* Position below the fieldset */
+    left: 5px;
+    color: #ff3333;
+    font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+
+.form-control.error fieldset {
+    border-color: #ff3333;
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+/* For the password field specifically */
+.password-field .validation-message {
+    bottom: -20px;
+}
+
+
+@media (width <=600px){
+	.container{
+		display: flex;
+		flex-direction: column;
+		justify-content:center;
+		align-items:center;
+	}	
+	.description{
+		padding: 0;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	
+
+	}
+
+	i{
+		position: absolute;
+		bottom:50px;
+		border: 7px solid;
+		border-radius: 50%;
+		padding: 10px;
+		margin-bottom: 10px;
+		background-color: rgba(245, 200, 200, 0.7);
+	}
+
+}

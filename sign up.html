@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>register</title>
+	<link rel="stylesheet" href="LOGIN.CSS">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sacramento&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<div class="container">
+		<div class="description">
+			<i class="fa-brands fa-linkedin-in fa-3x"></i>
+			<h1>linkedln</h1>
+			<h2>register</h2>
+		</div>
+		<form action="signup.php" method="POST">
+			<div class="form-control">
+				<fieldset>
+				<legend>Firstname</legend>
+				<input type="text" name="firstname" >
+				</fieldset>
+				<div class="validation-message"></div>
+			</div>
+			<div class="form-control">
+				<fieldset>
+				<legend>Lastname</legend>
+				<input type="text" name="lastname">
+				</fieldset>
+				<div class="validation-message"></div>
+			</div>
+			<div class="form-control">
+				<fieldset>
+				<legend>Username</legend>
+				<input type="text" name="username" >
+				</fieldset>
+				<div class="validation-message"></div>
+			</div>
+			<div class="form-control">
+				<fieldset>
+				<legend>Password</legend>
+				<input type="Password" name="password" >
+				</fieldset>
+				<div class="validation-message"></div>
+			</div>
+			<button class='btn' type="submit">register</button>
+			<p>already have an account?<a href="LOGIN.HTML"> login</a> </p>
+		</form>
+		
+		
+	</div>
+
+<script src='singup_validation.js'></script>	
+</body>
+</html>
